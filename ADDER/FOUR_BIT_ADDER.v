@@ -1,6 +1,6 @@
 // The aim of this project is to design and implement Verilog code for a 4-bit ripple carry adder using four FullAdders.
 
-module four_bit_add_sub (SW, LEDG);
+module FOUR_BIT_ADDER (SW, LEDG);
     input [8:0] SW; // A=SW[8:5], B=SW[4:1], Add/Sub=SW[0]
     output [3:0] LEDG; // Sum output
     wire [3:0] B_ones, sum;

@@ -1,8 +1,8 @@
-// The project involves implementing a Verilog module named "four_bit_add_sub_ovrflw" that adds or subtracts two four-bit binary numbers based on a switch input. 
+// The project involves implementing a Verilog module that adds or subtracts two four-bit binary numbers based on a switch input. 
 // The input switch (SW) has nine bits, and the module separates the first four bits as one input number, the next four bits as another input number, and the last bit as the add/subtract operation selector. 
 // The output is displayed on a four-bit green LED (LEDG), and a two-bit red LED (LEDR) indicates the overflow condition.
 
-module four_bit_add_sub_ovrflw (SW, LEDG, LEDR);
+module OVERFLOW_4_BIT_ADDER (SW, LEDG, LEDR);
     input [8:0] SW; // A=SW[8:5], B=SW[4:1], Add/Sub=SW[0]
     output [3:0] LEDG; // Output
     output [1:0] LEDR; // Overflow flag
