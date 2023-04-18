@@ -1,4 +1,10 @@
-module PART2 (CLOCK_50, KEY, HEX3, HEX2, HEX1, HEX0, LEDG);
+// The objective of this project is to design and implement a modified Verilog module that can increment with improved accuracy through one-second intervals.
+// This will be achieved by completing the module provided below. 
+// The BCD counting will now use four signals - bcd3, bcd2, bcd1, and bcd0 - that correspond to the respective 10-, 1-, 0.1-, and 0.01-second columns on HEX3, HEX2, HEX1, and HEX0 displays.
+// The pushbutton KEY[0] serves as an input that resets the counter to zero whenever it goes from not pressed (KEY[0] = 1) to pressed (KEY[0] = 0).
+// To display the respective columns on the HEX displays within a 5% error range, we must select the appropriate number of bits for the count variable.
+
+module Accurate_BCD_Counter (CLOCK_50, KEY, HEX3, HEX2, HEX1, HEX0, LEDG);
     input CLOCK_50;
     input [3:0] KEY;
     output [0:6] HEX3, HEX2, HEX1, HEX0;

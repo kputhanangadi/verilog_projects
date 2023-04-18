@@ -1,5 +1,6 @@
-// The module bcd7seg displays the bcd value on the specified 7-segment display.
-module bcd7seg (bcd, display);
+// The module BCD_DISPLAY displays the bcd value on the specified 7-segment display.
+
+module BCD_DISPLAY (bcd, display);
     input [3:0] bcd;
     output [0:6] display;
     reg [0:6] display;

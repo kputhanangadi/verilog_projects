@@ -1,3 +1,5 @@
+// The aim of this project is to design and implement Verilog code for differnt types of adders such as HalfAdder, FullAdder, and FourBitAdder. 
+
 module HA(LEDR, SW);
     input [1:0] SW;
     output [1:0] LEDR;
