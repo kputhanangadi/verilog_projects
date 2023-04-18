@@ -1,4 +1,12 @@
-module PART1 (CLOCK_50, KEY, HEX3, HEX2, HEX1, HEX0, LEDG);
+// This project involves designing and implementing a Verilog module for a Binary-Coded Decimal (BCD) counter. 
+// The module uses a 50 MHz clock to increment the counter every 0.671 seconds and displays the rightmost eight bits of the count on LED outputs for testing purposes. 
+// The counter can be reset to zero using a pushbutton input. 
+// The BCD counting must have three decimal digits, with each counting from 0 to 9, represented by three signals - bcd2, bcd1, and bcd0 - which correspond to the 100-, 10-, and 1-second columns respectively. 
+// The three signals are 4-bit representations of hexadecimal numbers. 
+// The task is to modify the module to use a 25-bit count and represent the bcd2, bcd1, and bcd0 signals as respective 100-, 10-, and 1-second columns on the HEX2, HEX1, and HEX0 displays. 
+// The accuracy issue with the counting will be addressed in the subsequent part of the lab.
+
+module BCD_Counter (CLOCK_50, KEY, HEX3, HEX2, HEX1, HEX0, LEDG);
     input CLOCK_50;
     input [3:0] KEY;
     output [0:6] HEX3, HEX2, HEX1, HEX0;
