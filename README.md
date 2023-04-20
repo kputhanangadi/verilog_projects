@@ -23,9 +23,11 @@ Replace `<output_file>` with the name of the output file and `<verilog_file>` wi
 
 ## Contributing
 
-If you would like to contribute to this repository, please fork the repository and create a pull request with your changes. Please make sure to follow the repository's code of conduct and contributing guidelines.
+If you'd like to contribute to the development of this application, please follow these steps:
 
-## License
-
-This repository is licensed under the MIT license. See the LICENSE file for more information.
+1. Fork the repository
+2. Create a new branch for your feature or bug fix
+3. Make your changes and commit them
+4. Push your changes to your fork
+5. Create a pull request
 
